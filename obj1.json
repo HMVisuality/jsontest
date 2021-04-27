@@ -663,7 +663,7 @@
   {
     "id": 3,
     "name": "date",
-    "title": "Date objects methods",
+    "title": "date objects methods",
     "overview": "JavaScript Date objects represent a single moment in time in a platform-independent format",
 
     "desctiption": [
@@ -994,16 +994,22 @@
     "id": 4,
     "name": "boolean",
     "title": "boolean objects methods",
-    "overview": "the <code>Boolean</code> object is an object wrapper for a boolean value.",
+    "overview": "the Boolean object is an object wrapper for a boolean value.",
 
     "desctiption": [
       [
         "desctiption",
-        "boolean are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript boolean nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using boolean."
+        "The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (\"\"), the object has an initial value of false. All other values, including any object, an empty array ([]), or the string \"false\", create an object with an initial value of true.",
+        "Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object."
       ],
       [
-        "boolean",
-        "ate objects contain a Number that represents milliseconds since 1 January 1970 UTC."
+        "Everything With a \"Value\" is True",
+        "Any object of which the value is not undefined or null, including a Boolean object whose value is false, evaluates to true when passed to a conditional statement. Everything Without a \"Value\" is False"
+      ],
+      [
+        "booleans can be Objects",
+        "Normally JavaScript booleans are primitive values created from literals: var x = false;",
+        "But booleans can also be defined as objects with the keyword new: var y = new Boolean(false);"
       ]
     ],
     "content": [
