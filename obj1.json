@@ -8,7 +8,8 @@
     "desctiption": [
       [
         "desctiption",
-        "Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays."
+        "Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.",
+        "Arrays cannot use strings as element indexes (as in an associative array) but must use integers. Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties."
       ],
       [
         "Accessing array elements",
@@ -295,7 +296,7 @@
           ]
         },
         {
-          "id": 6,
+          "id": 7,
           "name": "Array.prototype.push()",
           "overview": "The push() method pushs the elements of an array in place and returns the pushed array.",
           "desctiption": [
@@ -625,7 +626,7 @@
           ]
         },
         {
-          "id": 6,
+          "id": 7,
           "name": "Array.prototype.push()",
           "overview": "The push() method pushs the elements of an array in place and returns the pushed array.",
           "desctiption": [
@@ -983,6 +984,208 @@
               "id": 3,
               "name": "example 3",
               "title": "pushping array in a.."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "boolean",
+    "title": "boolean objects methods",
+    "overview": "JavaScript boolean objects represent a single moment in time in a platform-independent format",
+
+    "desctiption": [
+      [
+        "desctiption",
+        "boolean are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript boolean nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using boolean."
+      ],
+      [
+        "boolean",
+        "ate objects contain a Number that represents milliseconds since 1 January 1970 UTC."
+      ]
+    ],
+    "content": [
+      {
+        "id": 1,
+        "name": "example 1",
+        "title": "Iterating over an boolean"
+      },
+      {
+        "id": 2,
+        "name": "example 2",
+        "title": "Shortening an boolean"
+      },
+      {
+        "id": 3,
+        "name": "example 3",
+        "title": "Create empty boolean of fixed length"
+      }
+    ],
+
+    "subcontent": {
+      "properties": [
+        {
+          "id": 1,
+          "name": "Array.prototype.length",
+          "overview": "sets or returns the number of elements in that array",
+          "desctiption": [
+            [
+              "desctiption",
+              "The length property of an object which is an instance of type Array sets or returns the number of elements in that array. The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array."
+            ],
+            [
+              "value of the length property",
+              "The value of the length property is an integer with a positive sign and a value less than 2 to the 32nd power (232)."
+            ]
+          ],
+          "content": [
+            {
+              "id": 1,
+              "name": "example 1",
+              "title": "Array.prototype.length can"
+            },
+            {
+              "id": 2,
+              "name": "example 2",
+              "title": "the arr length property"
+            },
+            {
+              "id": 3,
+              "name": "example 3",
+              "title": "arr.length -1 will get you the last item in the array"
+            }
+          ]
+        }
+      ],
+
+      "methods": [
+        {
+          "id": 1,
+          "name": "Array.prototype.sort()",
+          "overview": "The sort() method sorts the elements of an array in place and returns the sorted array.",
+          "desctiption": [
+            [
+              "desctiption",
+              "The sort() property of an object which is an instance of type... numerically greater than the highest index in the array."
+            ],
+            [
+              "the sort()",
+              "a positive sign and a value less than 2 to the 32nd power (232)."
+            ]
+          ],
+          "content": [
+            {
+              "id": 1,
+              "name": "example 1",
+              "title": "contentexample sort()"
+            },
+            {
+              "id": 2,
+              "name": "example 2",
+              "title": "sort an array"
+            },
+            {
+              "id": 3,
+              "name": "example 3",
+              "title": "sorting array in a.."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Array.prototype.reduce()",
+          "overview": "The reduce() method reduces the elements of an array....",
+          "desctiption": [
+            [
+              "desctiption",
+              "The reduce() property of an object which is an instance of type... numerically greater than the highest index in the array."
+            ],
+            [
+              "the reduce()",
+              "a positive sign and a value less than 2 to the 32nd power (232)."
+            ]
+          ],
+          "content": [
+            {
+              "id": 1,
+              "name": "example 1",
+              "title": "contentexample reduce()"
+            },
+            {
+              "id": 2,
+              "name": "example 2",
+              "title": "reduce an array"
+            },
+            {
+              "id": 3,
+              "name": "example 3",
+              "title": "reduceing array in a.."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Array.prototype.split()",
+          "overview": "The split() method splits the elements of an array in place and returns the splited array.",
+          "desctiption": [
+            [
+              "desctiption",
+              "The split() property of an object which is an instance of type... numerically greater than the highest index in the array."
+            ],
+            [
+              "the split()",
+              "a positive sign and a value less than 2 to the 32nd power (232)."
+            ]
+          ],
+          "content": [
+            {
+              "id": 1,
+              "name": "example 1",
+              "title": "contentexample split()"
+            },
+            {
+              "id": 2,
+              "name": "example 2",
+              "title": "split an array"
+            },
+            {
+              "id": 3,
+              "name": "example 3",
+              "title": "spliting array in a.."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Array.prototype.find()",
+          "overview": "The find() method finds the elements of an array in place and returns the finded array.",
+          "desctiption": [
+            [
+              "desctiption",
+              "The find() property of an object which is an instance of type... numerically greater than the highest index in the array."
+            ],
+            [
+              "the find()",
+              "a positive sign and a value less than 2 to the 32nd power (232)."
+            ]
+          ],
+          "content": [
+            {
+              "id": 1,
+              "name": "example 1",
+              "title": "contentexample find()"
+            },
+            {
+              "id": 2,
+              "name": "example 2",
+              "title": "find an array"
+            },
+            {
+              "id": 3,
+              "name": "example 3",
+              "title": "finding array in a.."
             }
           ]
         }
