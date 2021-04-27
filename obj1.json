@@ -994,7 +994,7 @@
     "id": 4,
     "name": "boolean",
     "title": "boolean objects methods",
-    "overview": "JavaScript boolean objects represent a single moment in time in a platform-independent format",
+    "overview": "the <code>Boolean</code> object is an object wrapper for a boolean value.",
 
     "desctiption": [
       [
