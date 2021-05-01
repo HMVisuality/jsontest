@@ -110,11 +110,35 @@
           "desctiption": [
             [
               "desctiption",
-              "The sort() property of an object which is an instance of type... numerically greater than the highest index in the array."
+              "The sort() property of an object which is an instance of type... numerically greater than the highest index in the array.",
+              "JavaScript Version: ECMAScript 1",
+              "Accessing the sort method array.sort()",
+              "The sort() method sorts the items of an array",
+              "The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down)",
+              "By default, the sort() method sorts the values as strings in alphabetical and ascending order",
+              "This works well for strings (\"Apple\" comes before \"Banana\"). However, if numbers are sorted as strings,\"25\" is bigger than \"100\", because \"2\" is bigger than \"1\". Because of this, the sort() method will produce an incorrect result when sorting number. You can fix this by providing a \"compare function\""
             ],
             [
-              "the sort()",
-              "a positive sign and a value less than 2 to the 32nd power (232)."
+              "syntax",
+              "Syntax: array.sort(compareFunction)",
+              "(required) firstEl",
+              "The first element for comparison.",
+              "(required) secondEl",
+              "The second element for comparison.",
+              "(optional) compareFunction",
+              "The second element for comparison.",
+              "Specifies a function that defines the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value.",
+              "* function(a, b){return a-b}",
+              "When the sort() method compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.",
+              "When comparing 40 and 100, the sort() method calls the compare function(40,100). The function calculates 40-100, and returns -60 (a negative value). The sort function will sort 40 as a value lower than 100."
+            ],
+            [
+              "return value:", "The sorted array, the Array object with the items sorted"
+            ],
+            [
+              "for more visit W3C/MDN",
+              "https://www.w3schools.com/JSREF/jsref_sort.asp",
+              "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
             ]
           ],
           "content": [
@@ -999,18 +1023,18 @@
     "desctiption": [
       [
         "desctiption",
-        "The value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (\"\"), the object has an initial value of false. All other values, including any object, an empty array ([]), or the string \"false\", create an object with an initial value of true.",
-        "Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object."
+        "the value passed as the first parameter is converted to a boolean value, if necessary. If the value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string (\"\"), the object has an initial value of false. All other values, including any object, an empty array ([]), or the string \"false\", create an object with an initial value of true.",
+        "do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object."
       ],
       [
-        "Everything With a \"Value\" is True",
-        "Any object of which the value is not undefined or null, including a Boolean object whose value is false, evaluates to true when passed to a conditional statement. Everything Without a \"Value\" is False"
+        "everything With a \"Value\" is True",
+        "any object of which the value is not undefined or null, including a Boolean object whose value is false, evaluates to true when passed to a conditional statement. Everything Without a \"Value\" is False"
       ],
       [
         "booleans as Objects",
-        "Normally JavaScript booleans are primitive values created from literals: var x = false;",
-        "Booleans defined as objects with the keyword new: var y = new Boolean(false);",
-        "It is not recommended to create Boolean objects and it slows down execution speed. The new keyword complicates the code and produces some unexpected results"
+        "normally JavaScript booleans are primitive values created from literals: var x = false;",
+        "booleans defined as objects with the keyword new: var y = new Boolean(false);",
+        "it is not recommended to create Boolean objects and it slows down execution speed. The new keyword complicates the code and produces some unexpected results"
       ]
     ],
     "content": [
