@@ -110,7 +110,6 @@
           "desctiption": [
             [
               "desctiption",
-              "The sort() property of an object which is an instance of type... numerically greater than the highest index in the array.",
               "JavaScript Version: ECMAScript 1",
               "Accessing the sort method array.sort()",
               "The sort() method sorts the items of an array",
